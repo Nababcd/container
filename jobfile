@@ -1,0 +1,15 @@
+pipeline{
+    agent any
+    environment{
+        java="30"
+        version="1.7.0"
+    }
+    stages{
+        stage('print envar'){
+            steps{
+                echo"$java"
+                echo"$version"
+            }
+        }
+    }
+}    
