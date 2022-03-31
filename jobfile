@@ -7,7 +7,7 @@ pipeline{
     stages{
         stage('print envar'){
             steps{
-                echo"$java"
+                echo"$python"
                 echo"$version"
             }
         }
